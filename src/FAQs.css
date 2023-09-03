@@ -1,0 +1,42 @@
+.divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+  
+  &:before,
+  &:after {
+    height: 1px;
+/*    margin: 0 1em;*/
+    margin: 30px;
+  }
+}
+
+  .glow {
+    &:before,
+    &:after {
+      height: 12px;
+      -webkit-filter: blur(3px);
+      border-radius: 30px;
+    }
+    
+    &:before {
+      background: linear-gradient(to right, blue, rgb(0, 225, 255));
+    }
+    
+    &:after {
+      background: linear-gradient(to left, blue, rgb(0, 225, 255));
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
